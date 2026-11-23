@@ -1,0 +1,22 @@
+{
+  "name": "@hnzxb/cli",
+  "version": "0.1.0",
+  "description": "CLI 智能代理：原生命令透传 + --agent AI 助手排查（OpenAI 兼容接口）",
+  "type": "module",
+  "license": "MIT",
+  "repository": "github:hnzxb/cli",
+  "bin": {
+    "hnzxb": "bin/cli.js",
+    "cli": "bin/cli.js"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "node --test tests/*.test.js",
+    "verify": "node --test tests/*.test.js && node bin/cli.js --help >/dev/null && echo '✅ verify 全部通过'"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.15.0",
+    "globals": "^17.14.0"
+  }
+}
