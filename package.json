@@ -9,6 +9,12 @@
     "hnzxb": "bin/cli.js",
     "cli": "bin/cli.js"
   },
+  "files": [
+    "bin",
+    "src",
+    "justfile",
+    "AGENTS.md"
+  ],
   "scripts": {
     "cli": "bun bin/cli.js",
     "lint": "eslint .",
